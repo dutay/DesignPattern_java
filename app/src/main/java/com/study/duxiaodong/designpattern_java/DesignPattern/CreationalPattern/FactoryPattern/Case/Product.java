@@ -1,0 +1,47 @@
+package com.study.duxiaodong.designpattern_java.DesignPattern.CreationalPattern.FactoryPattern.Case;
+
+/**
+ * author : gavin_du
+ * email : 1033784386@qq.com
+ * date : 2019/8/14 16:11
+ * description : 抽象产品类（定义公共接口）
+ */
+public abstract class Product {
+
+   public abstract void show();
+}
+
+/**
+ * 具体产品
+ */
+class Product_A extends Product {
+
+    @Override
+    public void show() {
+        System.out.println("工厂A生产的A产品。");
+    }
+}
+
+/**
+ * 具体产品B
+ */
+class Product_B extends Product {
+
+    @Override
+    public void show() {
+        System.out.println("工厂B生产的B产品。");
+    }
+}
+
+/**
+ * 具体产品C
+ */
+class Product_C extends Product {
+
+    @Override
+    public void show() {
+        System.out.println("工厂C生产的C产品。");
+    }
+}
+
+
